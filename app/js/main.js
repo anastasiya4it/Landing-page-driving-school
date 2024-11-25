@@ -1,3 +1,5 @@
+// const Inputmask = require("inputmask");
+
 $(function () {
   $(".toggle").on("click", function () {
     if ($(".menu__rightside").hasClass("menu__rightside--close")) {
@@ -12,22 +14,58 @@ $(function () {
       $(".btn").addClass("btn--close");
     }
   });
+  // $(document).ready(function () {
+  //   const phoneInput = $(".form__input-phone[type='tel']").eq(0);
+  //   const im = new Inputmask("+38 (999) 999-99-99");
+  //   im.mask(phoneInput);
+  // });
 
   $(".form__btn").on("click", function (event) {
     event.preventDefault();
-    var name = $(".form__input[type='text']").eq(0).val();
-    var phone = $(".form__input[type='text']").eq(1).val();
-
-    if (name === "" || phone === "") {
-      $(".form__label").removeClass("form__label--close");
-      $(".form__input").addClass("form__input--error");
+    var name = $(".form__input-name[type='text']").eq(0).val();
+    var phone = $(".form__input-phone[type='text']").eq(0).val();
+    console.log(phone);
+    if (name.length <= 3) {
+      $(".form__label-name").removeClass("form__label--close");
+      $(".form__input-name").addClass("form__input--error");
     } else {
-      $(".form__label").addClass("form__label--close");
-      $(".form__input").removeClass("form__input--error");
+      $(".form__label-name").addClass("form__label--close");
+      $(".form__input-name").removeClass("form__input--error");
+      $(".popup").removeClass("popup--close");
+    }
+
+    if (phone.length <= 10) {
+      $(".form__label-phone").removeClass("form__label--close");
+      $(".form__input-phone").addClass("form__input--error");
+    } else {
+      // const im = new Inputmask("+38 (999) 999-99-99");
+      // im.mask(phone);
+      // ;(phone).inputmask("+38 (999) 999-99-99");
+      $(".form__label-phone").addClass("form__label--close");
+      $(".form__input-phone").removeClass("form__input--error");
+
       $(".popup").removeClass("popup--close");
     }
   });
   $(".popup").on("click", function (event) {
     $(".popup").addClass("popup--close");
   });
+});
+// import Swiper from "swiper/bundle";
+// import "swiper/css/bundle";
+const swiper = new Swiper(".mySwiper", {
+  // modules: [Navigation, Pagination],
+  autoplay: {
+    delay: 2500,
+    disableOnInteraction: false,
+  },
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+    type: "bullets",
+  },
+  slideToClickedSlide: true,
+  // mousewheel: true,
+  keyboard: true,
+  loop: true,
 });

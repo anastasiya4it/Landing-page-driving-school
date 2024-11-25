@@ -85,44 +85,48 @@
               Сучасна та беспечна<br />
               автошкола
             </h1>
-            <!-- <p class="offer__text">
-              Привеземо та візьмемо заняття в будь-якому місці міста
-            </p> -->
             <div class="offer__phone">
-              <p class="offer__text">Телефонуйте нам:</p>
+              <p class="offer__text">Телефонуйте нам: &nbsp;</p>
               <a class="offer__text offer__link" href="tel:+380671234567">
                 +38(096) 033-30-03
               </a>
-            </div>
-            <div class="offer__form">
-              <p class="offer__text form__title">або передзвонимо ми:</p>
-              <form action="form" class="form">
-                <div class="form__inner">
-                  <input
-                    class="form__input"
-                    type="text"
-                    placeholder="Ваше ім'я"
-                    id="name"
-                  />
-                  <label for="name" class="form__label form__label--close">
-                    Введіть ім'я
-                  </label>
-                </div>
-                <div class="form__inner">
-                  <input
-                    class="form__input"
-                    type="text"
-                    id="phone"
-                    placeholder="Ваш номер телефону"
-                  />
-                  <label for="phone" class="form__label form__label--close">
-                    Введіть номер телефону
-                  </label>
-                </div>
-                <button class="form__btn button button--secondary">
-                  Відправити
-                </button>
-              </form>
+
+              <div class="offer__form">
+                <p class="offer__text form__title">або передзвонимо ми:</p>
+                <form action="form" class="form">
+                  <div class="form__inner">
+                    <input
+                      class="form__input-name"
+                      type="text"
+                      placeholder="Ваше ім'я"
+                      id="name"
+                    />
+                    <label
+                      for="name"
+                      class="form__label-name form__label--close"
+                    >
+                      Введіть ім'я
+                    </label>
+                  </div>
+                  <div class="form__inner">
+                    <input
+                      class="form__input-phone"
+                      type="text"
+                      id="phone"
+                      placeholder="Ваш номер телефону"
+                    />
+                    <label
+                      for="phone"
+                      class="form__label-phone form__label--close"
+                    >
+                      Введіть номер телефону
+                    </label>
+                  </div>
+                  <button class="form__btn button button--secondary">
+                    Відправити
+                  </button>
+                </form>
+              </div>
             </div>
           </div>
         </div>
@@ -188,11 +192,11 @@
                     <button class="program__btn button button--inform">
                       Детальнише
                     </button>
-                    <button
+                    <!-- <button
                       class="program__btn program__btn--active button button--active"
                     >
                       Записатись
-                    </button>
+                    </button> -->
                   </div>
                 </div>
               </div>
@@ -248,21 +252,96 @@
                     <button class="program__btn button button--inform">
                       Детальнише
                     </button>
-                    <button
+                    <!-- <button
                       class="program__btn program__btn--active button button--active"
                     >
                       Записатись
-                    </button>
+                    </button> -->
                   </div>
                 </div>
               </div>
             </div>
           </div>
         </section>
+
+        <section class="prioritet">
+          <div class="container">
+            <h2 class="prioritet__title">Наші переваги</h2>
+            <div class="prioritet__inner">
+              <div class="prioritet__box">
+                <div class="prioritet__item">
+                  <img src="images/2.png" alt="icon" class="prioritet__img" />
+                  <h3 class="prioritet__subtitle">Комфортні авто</h3>
+                  <p class="prioritet__text">
+                    Навчання на сучасних автомобілях з автоматичною або
+                    механічною коробкою передач
+                  </p>
+                </div>
+                <div class="prioritet__item">
+                  <img src="images/3.png" alt="icon" class="prioritet__img" />
+                  <h3 class="prioritet__subtitle">Професійні інструктори</h3>
+                  <p class="prioritet__text">
+                    Наші інструктори мають великий досвід роботи та вміють
+                    підібрати підхід до кожного учня
+                  </p>
+                </div>
+                <div class="prioritet__item">
+                  <img src="images/4.png" alt="icon" class="prioritet__img" />
+                  <h3 class="prioritet__subtitle">Приватний автодром</h3>
+                  <p class="prioritet__text">
+                    Навчання на власному автодромі, що дозволяє відчути себе
+                    впевнено на дорозі
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide swiper__slide">
+              <!-- <div class="swiper-picture"> -->
+              <img class="swiper-img" src="images/1.png" alt="" />
+              <!-- </div> -->
+            </div>
+
+            <div class="swiper-slide swiper__slide">
+              <!-- <div class="swiper-picture"> -->
+              <img class="swiper-img" src="images/1.png" alt="" />
+              <!-- </div> -->
+            </div>
+
+            <div class="swiper-slide swiper__slide">
+              <!-- <div class="swiper-picture"> -->
+              <img class="swiper-img" src="images/1.png" alt="" />
+              <!-- </div> -->
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+          <!-- <div class="swiper-button-prev"></div> -->
+          <!-- <div class="swiper-button-next"></div> -->
+
+          <!-- If we need scrollbar -->
+          <!-- <div class="swiper-scrollbar"></div> -->
+        </div>
       </main>
       <footer class="footer"></footer>
     </div>
 
     <script src="js/main.min.js"></script>
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-4CCR5HVWWV"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-4CCR5HVWWV");
+    </script>
   </body>
 </html>
