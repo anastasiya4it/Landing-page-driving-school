@@ -1,0 +1,49 @@
+html,
+body {
+  // min-height: 100%;
+  font-family: "Comfortaa";
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.15;
+  letter-spacing: 0%;
+  color: #000;
+}
+h1,
+h2,
+h3 {
+  font-family: "Montserrat", sans-serif;
+}
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+.main {
+  flex: 1 0 auto;
+}
+.footer {
+  flex: 0 0 auto;
+}
+
+.container {
+  width: 100%;
+  max-width: 1140px; //1110+padding 2*15
+  margin: 0 auto;
+  padding: 0 30px;
+}
+@media (max-width: 768px) {
+  html,
+  body {
+    min-height: 100%;
+    font-family: "Comfortaa";
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 150%;
+    letter-spacing: 0%;
+    color: #000;
+  }
+  .container {
+    padding: 0 10px;
+  }
+}

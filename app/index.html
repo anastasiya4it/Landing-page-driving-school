@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.min.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Comfortaa&amp;family=Yeseva+One&amp;display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <header class="header">
+      <img src="images/1.png" alt="header" class="header__img" />
+
+      <div class="container">
+        <div class="header__box">
+          <div class="header__inner">
+            <nav class="menu">
+              <ul class="menu__list">
+                <li class="menu__list-item">
+                  <a class="menu__list-link" href="../about.html">Ціни</a>
+                </li>
+                <li class="menu__list-item">
+                  <a class="menu__list-link" href="#">Програма</a>
+                </li>
+              </ul>
+            </nav>
+            <a class="logo" href="#">
+              <img src="images/logo.png" />
+            </a>
+            <nav class="menu">
+              <ul class="menu__list">
+                <li class="menu__list-item">
+                  <a class="menu__list-link" href="#">Послуги</a>
+                </li>
+                <li class="menu__list-item">
+                  <a class="menu__list-link" href="#">Кабінет</a>
+                </li>
+              </ul>
+            </nav>
+            <div class="menu__mobile">
+              <div class="btn">
+                <input
+                  id="checkbox2"
+                  type="checkbox"
+                  class="header__btn toggle__btn toggle__btn--close toggle__btn--open"
+                />
+                <label
+                  class="toggle toggle__btn toggle__btn--close"
+                  for="checkbox2"
+                >
+                  <div id="line4" class="lines"></div>
+                  <div id="line5" class="lines"></div>
+                  <div id="line6" class="lines"></div>
+                </label>
+              </div>
+              <nav class="menu__rightside menu__rightside--close">
+                <a class="" href="#">
+                  <img src="images/logo.png" class="menu__mobile-logo" />
+                </a>
+                <ul class="menu__list">
+                  <li class="menu__list-item">
+                    <a class="menu__list-link" href="../about.html">Ціни</a>
+                  </li>
+                  <li class="menu__list-item">
+                    <a class="menu__list-link" href="#">Програма</a>
+                  </li>
+                  <li class="menu__list-item">
+                    <a class="menu__list-link" href="#">Послуги</a>
+                  </li>
+                  <li class="menu__list-item">
+                    <a class="menu__list-link" href="#">Кабінет</a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </div>
+        <div class="offer">
+          <div class="offer__slogan">
+            <h1 class="offer__title">
+              Сучасна та беспечна<br />
+              автошкола
+            </h1>
+            <!-- <p class="offer__text">
+              Привеземо та візьмемо заняття в будь-якому місці міста
+            </p> -->
+            <div class="offer__phone">
+              <p class="offer__text">Телефонуйте нам:</p>
+              <a class="offer__text offer__link" href="tel:+380671234567">
+                +38(096) 033-30-03
+              </a>
+            </div>
+            <div class="offer__form">
+              <p class="offer__text form__title">або передзвонимо ми:</p>
+              <form action="form" class="form">
+                <div class="form__inner">
+                  <input
+                    class="form__input"
+                    type="text"
+                    placeholder="Ваше ім'я"
+                    id="name"
+                  />
+                  <label for="name" class="form__label form__label--close">
+                    Введіть ім'я
+                  </label>
+                </div>
+                <div class="form__inner">
+                  <input
+                    class="form__input"
+                    type="text"
+                    id="phone"
+                    placeholder="Ваш номер телефону"
+                  />
+                  <label for="phone" class="form__label form__label--close">
+                    Введіть номер телефону
+                  </label>
+                </div>
+                <button class="form__btn button button--secondary">
+                  Відправити
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="popup popup--close">
+          <div class="popup__box">
+            <p class="popup__text">
+              Запит отримано, зателефонуемо найближчим часом<br />Дякуємо за
+              звернення
+            </p>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="wrapper">
+      <main class="main">
+        <section class="program">
+          <div class="container">
+            <h2 class="program__title">Програми навчання</h2>
+            <div class="program__inner">
+              <div class="program__border-box">
+                <div class="program__box">
+                  <h3 class="program__subtitle">
+                    Отримання прав категории "Б"
+                  </h3>
+                  <ul class="program__list">
+                    <li class="program__list-item">Навчимо їздити з нуля</li>
+                    <li class="program__list-item">
+                      Підготуємо до теоретичного і практичного екзаменів
+                    </li>
+                    <li class="program__list-item">
+                      Автоматична або механічна КПП
+                    </li>
+                    <li class="program__list-item">
+                      Комфортні та безпечни автомобілі
+                    </li>
+                    <li class="program__list-item">
+                      Професійні та адекватні інструктори
+                    </li>
+                    <li class="program__list-item">Приватний автодром</li>
+                    <li class="program__list-item">
+                      Авторьска методика навчання
+                    </li>
+                    <li class="program__list-item">
+                      Підготовка до реальних умов дорожнього руху
+                    </li>
+                    <li class="program__list-item">
+                      Курси водіння у складних погодних та дорожніх умовах
+                    </li>
+                    <li class="program__list-item">
+                      Опрацювання маршрутів ТСЦ
+                    </li>
+                  </ul>
+                  <div class="program__price">
+                    <p class="program__title-inner">Вартість навчання:</p>
+                    <p class="program__title-inner">
+                      Реестрация - <span>5000 грн</span>
+                    </p>
+                    <p class="program__title-inner">
+                      Практичне заняття 1 година - <span>850грн</span>
+                    </p>
+                  </div>
+                  <div class="program__footer">
+                    <button class="program__btn button button--inform">
+                      Детальнише
+                    </button>
+                    <button
+                      class="program__btn program__btn--active button button--active"
+                    >
+                      Записатись
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="program__border-box">
+                <div class="program__box">
+                  <h3 class="program__subtitle">Відновлення навичок водіння</h3>
+                  <h4 class="program__title-inner">
+                    Є водийське, але почуваєш себе невпевненно на дорозі? Ми
+                    допоможемо!
+                  </h4>
+                  <ul class="program__list">
+                    <li class="program__list-item">
+                      Подолання страху їзди - Психологічна підтримка та
+                      спеціалізовані техніки
+                    </li>
+                    <li class="program__list-item">
+                      Навчання після ДТП - Індивідуальний підхід для відновлення
+                      впевненості за кермом.
+                    </li>
+                    <li class="program__list-item">
+                      Практика на реальних дорогах - Поступове повернення до
+                      водінню у комфортних умовах.
+                    </li>
+                    <li class="program__list-item">
+                      Комплексна оцінка навичок - Детальний аналіз та план
+                      відновлення.
+                    </li>
+                    <li class="program__list-item">
+                      Індивідуальні маршрути навчання (універ, садок, робота)
+                    </li>
+                    <li class="program__list-item">
+                      Підготовка до екстремальних умов - Курси водіння складних
+                      погодних та дорожніх умов.
+                    </li>
+                    <li class="program__list-item">
+                      Водіння електромобіля однією педаллю (автомобілем Тесла)
+                    </li>
+                    <li class="program__list-item">
+                      Довчимо після інших автошкол
+                    </li>
+                  </ul>
+                  <div class="program__price">
+                    <p class="program__title-inner">Вартість навчання:</p>
+                    <p class="program__title-inner">
+                      Реестрация - <span>5000 грн</span>
+                    </p>
+                    <p class="program__title-inner">
+                      Практичне заняття 1 година - <span>850грн</span>
+                    </p>
+                  </div>
+                  <div class="program__footer">
+                    <button class="program__btn button button--inform">
+                      Детальнише
+                    </button>
+                    <button
+                      class="program__btn program__btn--active button button--active"
+                    >
+                      Записатись
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer class="footer"></footer>
+    </div>
+
+    <script src="js/main.min.js"></script>
+  </body>
+</html>
