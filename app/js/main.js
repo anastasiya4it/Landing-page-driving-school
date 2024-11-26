@@ -1,4 +1,6 @@
 // const Inputmask = require("inputmask");
+// import Swiper from "swiper/bundle";
+// import "swiper/css/bundle";
 
 $(function () {
   $(".toggle").on("click", function () {
@@ -51,9 +53,10 @@ $(function () {
     $(".popup").addClass("popup--close");
   });
 });
+
 // import Swiper from "swiper/bundle";
 // import "swiper/css/bundle";
-const swiper = new Swiper(".mySwiper", {
+const swiper = new Swiper(".swiper", {
   // modules: [Navigation, Pagination],
   autoplay: {
     delay: 2500,
@@ -64,8 +67,17 @@ const swiper = new Swiper(".mySwiper", {
     clickable: true,
     type: "bullets",
   },
-  slideToClickedSlide: true,
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+  freeMode: {
+    enabled: true,
+    momentum: true,
+  },
+  slidesPerView: 3,
+  // slideToClickedSlide: true,
   // mousewheel: true,
-  keyboard: true,
-  loop: true,
+  // keyboard: true,
+  // loop: true,
 });
