@@ -17,8 +17,10 @@
 
   <body>
     <header class="header">
-      <img src="images/1.png" alt="header" class="header__img" />
 
+        <img src="images/1.png" alt="header" class="header__img" />
+
+      
       <div class="container">
         <div class="header__box">
           <div class="header__inner">
@@ -104,6 +106,7 @@
                       type="text"
                       placeholder="Ваше ім'я"
                       id="name"
+                      name="name"
                     />
                     <label
                       for="name"
@@ -117,6 +120,7 @@
                       class="form__input-phone"
                       type="text"
                       id="phone"
+                      name="phone"
                       placeholder="Ваш номер телефону"
                     />
                     <label
@@ -126,7 +130,7 @@
                       Введіть номер телефону
                     </label>
                   </div>
-                  <button class="form__btn button button--secondary">
+                  <button class="form__btn button button--secondary" type="submit">
                     Відправити
                   </button>
                 </form>
@@ -134,6 +138,48 @@
             </div>
           </div>
         </div>
+        <!-- <section class="top">
+          <div class="container top__inner">
+            <div class="top__title">Єводій - це:</div>
+            <div class="swiper mySwiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide swiper__slide">
+                  <img class="swiper-img" src="images/1.png" alt="" />
+                  <div class="swiper__title">Заняття у зручний час</div>
+                </div>
+
+                <div class="swiper-slide swiper__slide">
+                  <img class="swiper-img" src="images/1.png" alt="" />
+                  <div class="swiper__title">Преміальний автопарк</div>
+                </div>
+
+                <div class="swiper-slide swiper__slide">
+                  <img class="swiper-img" src="images/1.png" alt="" />
+                  <div class="swiper__title">Сертифіковані інструктори</div>
+                </div>
+                <div class="swiper-slide swiper__slide">
+                  <img class="swiper-img" src="images/1.png" alt="" />
+                  <div class="swiper__title">VIP-сервіс</div>
+                </div>
+                <div class="swiper-slide swiper__slide">
+                  <img class="swiper-img" src="images/1.png" alt="" />
+                  <div class="swiper__title">Приватний автодром</div>
+                </div>
+                <div class="swiper-slide swiper__slide">
+                  <img class="swiper-img" src="images/1.png" alt="" />
+                  <div class="swiper__title">Авторська програма навчання</div>
+                </div>
+                <div class="swiper-slide swiper__slide">
+                  <img class="swiper-img" src="images/1.png" alt="" />
+                  <div class="swiper__title">Цифровізація</div>
+                </div>
+              </div>
+             
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
+            </div>
+          </div>
+        </section> -->
         <div class="popup popup--close">
           <div class="popup__box">
             <p class="popup__text">
@@ -142,7 +188,64 @@
             </p>
           </div>
         </div>
+        
       </div>
+      <section class="top">
+        <!-- <div class="top__inner"> -->
+          <!-- <div class="top__title">Єводій - це:</div> -->
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper ">
+              <div class="swiper-slide swiper__slide">
+                <div class="swiper__main">
+                <img class="swiper-img" src="images/icon-1.png" alt="" />
+                <div class="swiper__title">Заняття у зручний час</div>
+              </div>
+              </div>
+
+              <div class="swiper-slide swiper__slide">
+                <div class="swiper__main">
+                <img class="swiper-img" src="images/icon-2.png" alt="" />
+                <div class="swiper__title">Преміальний автопарк</div>
+              </div>
+              </div>
+
+              <div class="swiper-slide swiper__slide">
+                <div class="swiper__main">
+                <img class="swiper-img" src="images/icon-3.png" alt="" />
+                <div class="swiper__title">Сертифіковані інструктори</div>
+              </div>
+              </div>
+              <div class="swiper-slide swiper__slide">
+                <div class="swiper__main">
+                <img class="swiper-img" src="images/icon-4.png" alt="" />
+                <div class="swiper__title">VIP-сервіс</div>
+              </div>
+              </div>
+              <div class="swiper-slide swiper__slide">
+                <div class="swiper__main">
+                <img class="swiper-img" src="images/icon-5.png" alt="" />
+                <div class="swiper__title">Приватний автодром</div>
+              </div>
+              </div>
+              <div class="swiper-slide swiper__slide">
+                <div class="swiper__main">
+                <img class="swiper-img" src="images/icon-6.png" alt="" />
+                <div class="swiper__title">Авторська програма навчання</div>
+              </div>
+              </div>
+              <div class="swiper-slide swiper__slide">
+                <div class="swiper__main">
+                <img class="swiper-img" src="images/icon-7.png" alt="" />
+                <div class="swiper__title">Цифровізація</div>
+              </div>
+              </div>
+            </div>
+            
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+          </div>
+        <!-- </div> -->
+      </section>
     </header>
     <div class="wrapper">
       <main class="main">
@@ -446,48 +549,7 @@
             </div>
           </div>
         </section>
-        <section class="top">
-          <div class="container top__inner">
-            <div class="top__title">Єводій - це:</div>
-            <div class="swiper mySwiper">
-              <div class="swiper-wrapper">
-                <div class="swiper-slide swiper__slide">
-                  <img class="swiper-img" src="images/1.png" alt="" />
-                  <div class="swiper__title">Заняття у зручний час</div>
-                </div>
-
-                <div class="swiper-slide swiper__slide">
-                  <img class="swiper-img" src="images/1.png" alt="" />
-                  <div class="swiper__title">Преміальний автопарк</div>
-                </div>
-
-                <div class="swiper-slide swiper__slide">
-                  <img class="swiper-img" src="images/1.png" alt="" />
-                  <div class="swiper__title">Сертифіковані інструктори</div>
-                </div>
-                <div class="swiper-slide swiper__slide">
-                  <img class="swiper-img" src="images/1.png" alt="" />
-                  <div class="swiper__title">VIP-сервіс</div>
-                </div>
-                <div class="swiper-slide swiper__slide">
-                  <img class="swiper-img" src="images/1.png" alt="" />
-                  <div class="swiper__title">Приватний автодром</div>
-                </div>
-                <div class="swiper-slide swiper__slide">
-                  <img class="swiper-img" src="images/1.png" alt="" />
-                  <div class="swiper__title">Авторська програма навчання</div>
-                </div>
-                <div class="swiper-slide swiper__slide">
-                  <img class="swiper-img" src="images/1.png" alt="" />
-                  <div class="swiper__title">Цифровізація</div>
-                </div>
-              </div>
-              <!-- <div class="swiper-pagination"></div> -->
-              <div class="swiper-button-next"></div>
-              <div class="swiper-button-prev"></div>
-            </div>
-          </div>
-        </section>
+        
       </main>
       <footer class="footer"></footer>
     </div>

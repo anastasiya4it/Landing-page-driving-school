@@ -1,25 +1,32 @@
-$nav-color-text: rgba(255, 255, 255, 0.8);
-$bg-color-black: #363838;
-$bg-color-grey: #707070;
-$default: #5a5a5a;
-$bullet-color: #ffef35;
+// $nav-color-text: rgba(255, 255, 255, 0.8);
+// $bg-color-black: #363838;
+// $bg-color-grey: #707070;
+// $default: #5a5a5a;
+// $bullet-color: #ffef35;
 
-%title-font {
-  font-family: "Montserrat", sans-serif;
-  font-weight: 700;
-  color: #363838;
-}
-%line {
-  position: relative;
-  &::after {
-    content: "";
-    position: absolute;
-    // width: 80%;
-    height: 2px;
-    background: #6d7278;
-    // margin: 0 auto;
-    left: 0;
-    right: 0;
-    bottom: 0;
-  }
-}
+$light-gray: rgb(187, 189, 187);
+$gray: rgb(85, 97, 102);
+$blue: rgb(11, 104, 113);
+$black: rgb(29, 25, 23);
+$brown: rgb(165, 97, 39);
+$red-active: #ff0000;
+
+// %title-font {
+//   font-family: "Montserrat", sans-serif;
+//   font-weight: 700;
+//   color: #363838;
+// }
+// %line {
+//   position: relative;
+//   &::after {
+//     content: "";
+//     position: absolute;
+//     // width: 80%;
+//     height: 2px;
+//     background: #6d7278;
+//     // margin: 0 auto;
+//     left: 0;
+//     right: 0;
+//     bottom: 0;
+//   }
+// }

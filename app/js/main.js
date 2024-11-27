@@ -75,9 +75,37 @@ const swiper = new Swiper(".swiper", {
     enabled: true,
     momentum: true,
   },
-  slidesPerView: 3,
+  slidesPerView: 4,
   // slideToClickedSlide: true,
   // mousewheel: true,
   // keyboard: true,
-  // loop: true,
+  loop: true,
 });
+
+let form = document.querySelector("form");
+form.onsubmit = (e) => {
+  e.preventDefault();
+  // let res = document.querySelector(".result");
+  axios({
+    method: "GET",
+    url: "https://api.telegram.org/bot7839815008:AAFXIc-oIuuDyxVKfx0aAc81kokFLuG2Ac0/sendMessage?chat_id=-1002280396317&text=",
+    params: {
+      input1: document.querySelector('input[name="name"]').value,
+      input2: document.querySelector('input[name="phone"]').value,
+    },
+
+    // data: {
+    //   input1: document.querySelector('input[name="name"]').value,
+    //   input2: document.querySelector('input[name="phone"]').value,
+    //   // textarea: document.querySelector('textarea[name="textarea"]').value,
+    // },
+  });
+  // .then(() => {
+  //   res.innerHTML = "Form was successfully sent!";
+  //   form.reset();
+  // })
+  // .catch(() => {
+  //   res.innerHTML = "An error occurred!";
+  //   form.reset();
+  // });
+};
